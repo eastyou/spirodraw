@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spirodraw"
+version = "0.1.0"
+description = "万花尺描摹画册：参数方程生成 A4 可打印的内摆线画册"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["spirograph", "hypotrochoid", "math", "education", "print", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+spirodraw = "spirodraw.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/spirodraw"
+Source = "https://github.com/eastyou/spirodraw"
+
+[tool.setuptools]
+packages = ["spirodraw"]
